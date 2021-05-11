@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
   }
 
   login(){
-    //console.log(this.loginForm.value);
+    console.log(this.loginForm.value);
     this.apiAuth.login(this.loginForm.value).subscribe(response => {
       if(response.exito === 1){
         this.router.navigate(['/']);
